@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Site</title>
+    <script>
+        // Set the correct password here
+        var correctPassword = "yourpassword"; // Change this password
+
+        // Prompt user for the password
+        var userPassword = prompt("Enter the password to access this site:");
+
+        // If the password is incorrect, show an error and redirect
+        if (userPassword !== correctPassword) {
+            alert("Incorrect password. Access denied.");
+            window.location = "about:blank";  // Redirects to a blank page
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the private site</h1>
+    <p>If you entered the correct password, you can now see this content.</p>
+</body>
+</html>
